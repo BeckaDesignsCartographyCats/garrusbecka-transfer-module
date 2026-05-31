@@ -1,0 +1,183 @@
+{
+  "id": "garrusbecka-transfer-module",
+  "title": "Garrus/Becka transfer Module",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "<p>A small mod for transfering stuff</p>",
+  "authors": [
+    {
+      "name": "Garrus",
+      "flags": {}
+    },
+    {
+      "name": "Becka",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "maps",
+      "label": "Maps",
+      "path": "packs/maps",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "creatures",
+      "label": "Creatures",
+      "path": "packs/creatures",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "npc-players",
+      "label": "NPC/Players",
+      "path": "packs/npc-players",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "creature-abilities",
+      "label": "Creaure Abilities",
+      "path": "packs/creature-abilities",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "journal-entries",
+      "label": "Journal Entries",
+      "path": "packs/journal-entries",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+   "packFolders": [
+    {
+      "name": "Transfer Foulder",
+      "sorting": "m",
+      "color": "#8B0000",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Maps",
+          "sorting": "a",
+          "color": "#FF7F7F",
+          "packs": [
+            "maps"
+          ],
+          "folders": []
+        },
+        {
+          "name": " Actors",
+          "sorting": "a",
+          "color": "#FF7F7F",
+          "packs": [
+            "creatures",
+            "npc-players",
+            "creature-abilities"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Journal Entries",
+          "sorting": "a",
+          "color": "#FF7F7F",
+          "packs": [
+            "journal-entries"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Items",
+          "sorting": "a",
+          "color": "##FF7F7F",
+          "packs": [
+            "items"
+          ],
+          "folders": []
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "monks-active-tiles",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "gAudioBundle-1",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "gAudioBundle-2",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "gAudioBundle-3",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "gAudioBundle-4",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "fxmaster",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "tagger",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "monks-combat-details",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  }
+}
