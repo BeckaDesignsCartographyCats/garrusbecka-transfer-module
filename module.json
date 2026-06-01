@@ -127,7 +127,7 @@
         {
           "name": "Items",
           "sorting": "a",
-          "color": "##FF7F7F",
+          "color": "#FF7F7F",
           "packs": [
             "items"
           ],
